@@ -32,7 +32,7 @@
  * @return {RegExp}
  */
 function getRegexForGuid() {
-  throw new Error('Not implemented');
+  return /\{[a-f 0-9]{8}-[a-f 0-9]{4}-[a-f 0-9]{4}-[a-f 0-9]{4}-[a-f 0-9]{12}\}/i;
 }
 
 
@@ -54,7 +54,7 @@ function getRegexForGuid() {
  *
  */
 function getRegexForPitSpot() {
-  throw new Error('Not implemented');
+  return /p[a-z ]t/;
 }
 
 
